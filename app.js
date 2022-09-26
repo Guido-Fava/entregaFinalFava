@@ -23,6 +23,8 @@ document.addEventListener('DOMContentLoaded', () => {
 //Simulacro de compra vacia el carrito y agradece al usuario
 botonVaciar.addEventListener('click', () => {
     carrito.length = 0
+    sessionStorage.clear()
+    localStorage.clear()
     actualizarCarrito()
     swal({
         title: "¡Gracias por su compra!",
